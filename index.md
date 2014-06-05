@@ -1,0 +1,53 @@
+---
+title       : BMI Calculator in Shiny
+subtitle    : 
+author      : Alexander Seifert
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+---
+
+## About the app
+
+The *BMI Calculator* is just a simple example of a Shiny app devised for the `Developing Data Products` course on Coursera. The source is [hosted on GitHub](https://github.com/aseifert/shiny-bmi), so feel free to fork it.
+
+The usable program itself is [hosted on shinyapps.io](https://aseifert.shinyapps.io/BMI-Calculator/).
+
+---
+
+## The Body Mass Index
+
+### What's a BMI?
+
+"The body mass index (BMI), or Quetelet index, is a measure of relative weight based on an individual's mass and height.
+
+Devised between 1830 and 1850 by the Belgian polymath Adolphe Quetelet during the course of developing 'social physics', it is defined as the individual's body mass divided by the square of their height – with the value universally being given in units of $kg/m2$." [1]
+
+### Why should I care about my BMI?
+
+"The BMI is used in a wide variety of contexts as a simple method to assess how much an individual's body weight departs from what is normal or desirable for a person of his or her height." [1]
+
+[1] <small>[Body mass index on Wikipedia](https://en.wikipedia.org/wiki/Body_mass_index)</small>
+
+
+---
+
+## How to use the app
+
+1. [Visit the app on shinyapps.io](https://aseifert.shinyapps.io/BMI-Calculator/)
+2. Choose your preferred system of units, either metric (kilograms & centimetres) or imperial (pounds and inches).
+3. Provide your weight
+4. Provide your height
+5. You will see the numbers on the right side update as you input your data. The chart gives you a good idea of how your BMI is to be interpreted.
+
+
+---
+
+## What the app looks like (Screenshot)
+
+![Screenshot of the app in action](assets/img/screenshot.png)
+
+

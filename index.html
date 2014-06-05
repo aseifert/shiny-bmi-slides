@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BMI Calculator in Shiny</title>
+  <meta charset="utf-8">
+  <meta name="description" content="BMI Calculator in Shiny">
+  <meta name="author" content="Alexander Seifert">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>BMI Calculator in Shiny</h1>
+    <h2></h2>
+    <p>Alexander Seifert<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>About the app</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The <em>BMI Calculator</em> is just a simple example of a Shiny app devised for the <code>Developing Data Products</code> course on Coursera. The source is <a href="https://github.com/aseifert/shiny-bmi">hosted on GitHub</a>, so feel free to fork it.</p>
+
+<p>The usable program itself is <a href="https://aseifert.shinyapps.io/BMI-Calculator/">hosted on shinyapps.io</a>.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>The Body Mass Index</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>What&#39;s a BMI?</h3>
+
+<p>&quot;The body mass index (BMI), or Quetelet index, is a measure of relative weight based on an individual&#39;s mass and height.</p>
+
+<p>Devised between 1830 and 1850 by the Belgian polymath Adolphe Quetelet during the course of developing &#39;social physics&#39;, it is defined as the individual&#39;s body mass divided by the square of their height – with the value universally being given in units of \(kg/m2\).&quot; [1]</p>
+
+<h3>Why should I care about my BMI?</h3>
+
+<p>&quot;The BMI is used in a wide variety of contexts as a simple method to assess how much an individual&#39;s body weight departs from what is normal or desirable for a person of his or her height.&quot; [1]</p>
+
+<p>[1] <small><a href="https://en.wikipedia.org/wiki/Body_mass_index">Body mass index on Wikipedia</a></small></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>How to use the app</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li><a href="https://aseifert.shinyapps.io/BMI-Calculator/">Visit the app on shinyapps.io</a></li>
+<li>Choose your preferred system of units, either metric (kilograms &amp; centimetres) or imperial (pounds and inches).</li>
+<li>Provide your weight</li>
+<li>Provide your height</li>
+<li>You will see the numbers on the right side update as you input your data. The chart gives you a good idea of how your BMI is to be interpreted.</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>What the app looks like (Screenshot)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/screenshot.png" alt="Screenshot of the app in action"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='About the app'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='The Body Mass Index'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How to use the app'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='What the app looks like (Screenshot)'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
