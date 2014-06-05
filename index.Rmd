@@ -13,22 +13,18 @@ mode        : selfcontained # {standalone, draft}
 ## About the app
 
 The *BMI Calculator* is just a simple example of a Shiny app devised for the `Developing Data Products` course on Coursera. The source is [hosted on GitHub](https://github.com/aseifert/shiny-bmi), so feel free to fork it.
+The app itself is [hosted on shinyapps.io](https://aseifert.shinyapps.io/BMI-Calculator/).
 
-The usable program itself is [hosted on shinyapps.io](https://aseifert.shinyapps.io/BMI-Calculator/).
-runA
-The BMI calculation is really trivial, the only thing to note is that you have to multiply the index by 703 if you are dealing with imperial units:
+The BMI calculation is really trivial, the only thing to note is that you have to multiply the index by 703 if you are dealing with imperial units. For example person weighing 80kg at a size of 1.90m (with metric units now) would have a BMI of:
 
 ```{r}
-bmi <- function(mass, height, units) {
-        bmi = mass / height^2
-        
-        if (units == IMPERIAL) {
-                bmi = bmi * 703
-        }
-        
-        return (bmi)
-}
+height = 1.90
+weight = 80
+weight / height^2 # BMI (for imperial units multiply by 703)
 ```
+
+which represents a normal healthy weight.
+
 
 ---
 
@@ -40,7 +36,7 @@ bmi <- function(mass, height, units) {
 
 Devised between 1830 and 1850 by the Belgian polymath Adolphe Quetelet during the course of developing 'social physics', it is defined as the individual's body mass divided by the square of their height – with the value universally being given in units of $kg/m2$." [1]
 
-### Why should I care about my BMI?
+### What does the BMI tell me?
 
 "The BMI is used in a wide variety of contexts as a simple method to assess how much an individual's body weight departs from what is normal or desirable for a person of his or her height." [1]
 
