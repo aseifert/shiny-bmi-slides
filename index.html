@@ -48,7 +48,20 @@
   <article data-timings="">
     <p>The <em>BMI Calculator</em> is just a simple example of a Shiny app devised for the <code>Developing Data Products</code> course on Coursera. The source is <a href="https://github.com/aseifert/shiny-bmi">hosted on GitHub</a>, so feel free to fork it.</p>
 
-<p>The usable program itself is <a href="https://aseifert.shinyapps.io/BMI-Calculator/">hosted on shinyapps.io</a>.</p>
+<p>The usable program itself is <a href="https://aseifert.shinyapps.io/BMI-Calculator/">hosted on shinyapps.io</a>.
+runA
+The BMI calculation is really trivial, the only thing to note is that you have to multiply the index by 703 if you are dealing with imperial units:</p>
+
+<pre><code class="r">bmi &lt;- function(mass, height, units) {
+    bmi = mass/height^2
+
+    if (units == IMPERIAL) {
+        bmi = bmi * 703
+    }
+
+    return(bmi)
+}
+</code></pre>
 
   </article>
   <!-- Presenter Notes -->

@@ -15,6 +15,22 @@ mode        : selfcontained # {standalone, draft}
 The *BMI Calculator* is just a simple example of a Shiny app devised for the `Developing Data Products` course on Coursera. The source is [hosted on GitHub](https://github.com/aseifert/shiny-bmi), so feel free to fork it.
 
 The usable program itself is [hosted on shinyapps.io](https://aseifert.shinyapps.io/BMI-Calculator/).
+runA
+The BMI calculation is really trivial, the only thing to note is that you have to multiply the index by 703 if you are dealing with imperial units:
+
+
+```r
+bmi <- function(mass, height, units) {
+    bmi = mass/height^2
+    
+    if (units == IMPERIAL) {
+        bmi = bmi * 703
+    }
+    
+    return(bmi)
+}
+```
+
 
 ---
 
